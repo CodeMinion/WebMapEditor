@@ -1,0 +1,60 @@
+<html>
+<head>
+<title> Akimo Map Editor </title>
+</head>
+
+<body bgcolor="silver">
+	
+	<!--<p id="moves">Moves: <span id="movecount">0</span></p> -->
+	<center>
+	<table>
+	<tr>
+		<td align = "center">
+			<!-- <p > Akimo Map Editor </p>-->
+		</td>
+	<tr>
+		<td>
+			<table id="editorPlaceholder">
+				<tr>
+					<td >
+						<canvas id="map_canvas" width="300" height="300"></canvas>
+					</td>
+					<td valign="top">
+					<table>
+						<tr>
+							<td>
+							<center><canvas id="selection_canvas1" width="300" height="300"></canvas></center>
+							</br>
+							<center><canvas id="selection_canvas2" width="300" height="300"></canvas></center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<label for="layers">Layers: </label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<img src="./Images/lyr_1.png" title="Layer Number" id="lyr_1" </>
+							<img src="./Images/lyr_2.png" title="Layer Number" id="lyr_2" </>
+							<img src="./Images/lyr_3.png" title="Layer Number" id="lyr_3" </>
+							<img src="./Images/lyr_4.png" title="Layer Number" id="lyr_4" </>
+							<img src="./Images/lyr_5.png" title="Layer Number" id="lyr_5" </>
+							<img src="./Images/lyr_6.png" title="Layer Number" id="lyr_6" </>
+							<img src="./Images/lyr_7.png" title="Layer Number" id="lyr_7" </>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>	
+			</table>
+		</td>
+	<tr>
+	</table>
+	</center>
+	<script src="./MapEditor.js"></script> 
+	<script>
+	InitEditor();
+	</script>
+</body> 
+</html>
