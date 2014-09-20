@@ -60,7 +60,7 @@ function InitEditor()
 	
 	
 	// Create Map Area
-	var mapArea = new MapArea("./Images/MapEditorV1.png", 20, 20, tileWidth, tileHeight);
+	var mapArea = new MapArea("./images/MapEditorV1.png", 20, 20, tileWidth, tileHeight);
 	
 	// Initialize the Layer Buttons
 	InitLayerBottons();
