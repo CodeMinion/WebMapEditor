@@ -1,77 +1,60 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+<title> Akimo Map Editor </title>
+</head>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Webmapeditor by CodeMinion</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/CodeMinion/WebMapEditor">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Webmapeditor</h1>
-            <h2>Map Editor built using HTML5 Canvas. Simple exploratory example.</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/CodeMinion/WebMapEditor/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/CodeMinion/WebMapEditor/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-<a name="html5-web-map-editor" class="anchor" href="#html5-web-map-editor"><span class="octicon octicon-link"></span></a>HTML5 Web Map Editor</h3>
-
-<h3>
-<a name="author-frank-e-hernandez" class="anchor" href="#author-frank-e-hernandez"><span class="octicon octicon-link"></span></a>AUTHOR: Frank E. Hernandez</h3>
-
-<h3>
-<a name="aka-code-minion" class="anchor" href="#aka-code-minion"><span class="octicon octicon-link"></span></a>A.K.A: CODE MINION</h3>
-
-<p>Simple map editor using HTML5 Canvas an JavaScript.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/CodeMinion">CodeMinion</a> can be found on <a href="https://github.com/CodeMinion/WebMapEditor">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
+<body bgcolor="silver">
+	
+	<!--<p id="moves">Moves: <span id="movecount">0</span></p> -->
+	<center>
+	<table>
+	<tr>
+		<td align = "center">
+			<!-- <p > Akimo Map Editor </p>-->
+		</td>
+	<tr>
+		<td>
+			<table id="editorPlaceholder">
+				<tr>
+					<td >
+						<canvas id="map_canvas" width="300" height="300"></canvas>
+					</td>
+					<td valign="top">
+					<table>
+						<tr>
+							<td>
+							<center><canvas id="selection_canvas1" width="300" height="300"></canvas></center>
+							</br>
+							<center><canvas id="selection_canvas2" width="300" height="300"></canvas></center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<label for="layers">Layers: </label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<img src="./images/lyr_1.png" title="Layer Number" id="lyr_1" </>
+							<img src="./images/lyr_2.png" title="Layer Number" id="lyr_2" </>
+							<img src="./images/lyr_3.png" title="Layer Number" id="lyr_3" </>
+							<img src="./images/lyr_4.png" title="Layer Number" id="lyr_4" </>
+							<img src="./images/lyr_5.png" title="Layer Number" id="lyr_5" </>
+							<img src="./images/lyr_6.png" title="Layer Number" id="lyr_6" </>
+							<img src="./images/lyr_7.png" title="Layer Number" id="lyr_7" </>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>	
+			</table>
+		</td>
+	<tr>
+	</table>
+	</center>
+	<script src="./javascripts/MapEditor.js"></script> 
+	<script>
+	InitEditor();
+	</script>
+</body> 
 </html>
